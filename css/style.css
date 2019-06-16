@@ -1,0 +1,214 @@
+@charset "utf-8";
+* {
+    font-family: 'Antic', sans-serif;
+    color: #fff;
+    text-align: center;
+}
+
+h1 {
+    right: 40%;
+    bottom: 80%;
+    text-align: center;
+    margin: auto;
+    text-transform: uppercase;
+    font-size: 50px;
+    line-height: 60px;
+    position: fixed;
+    padding: 20px
+}
+
+p {
+    font-size: 14px;
+    line-height: 20px;
+}
+
+body {
+    background-color: #ffffff;
+    margin: 0;
+    position: relative;
+}
+
+.menu {
+    z-index: 100;
+    background-color: #78cbfd;
+    position: fixed;
+    top: 40px;
+    left: 40px;
+    border: none;
+    padding: 30px 20px;
+    border: 5px solid rgba(255, 255, 255, 0.66);
+}
+
+.hamburger {
+    position: relative;
+    display: block;
+    height: 6px;
+    width: 40px;
+    border-radius: 2px;
+    background-color: #fff;
+    transition: background-color 300ms linear;
+}
+
+.hamburger:before,
+.hamburger:after {
+    position: absolute;
+    content: "";
+    display: inherit;
+    width: inherit;
+    height: inherit;
+    background-color: #fff;
+    border-radius: inherit;
+}
+
+.hamburger:before {
+    top: 14px;
+}
+
+.hamburger:after {
+    bottom: 14px;
+}
+
+.menu-active .hamburger {
+    background-color: rgba(255, 255, 255, 0);
+    margin-bottom: 20px;
+}
+
+.menu-active .hamburger:before {
+    top: 0;
+    transform: rotate(45deg);
+}
+
+.menu-active .hamburger:after {
+    bottom: 0;
+    transform: rotate(-45deg);
+}
+
+.menu a {
+    display: none;
+}
+
+.menu-active a {
+    clear: both;
+    text-transform: uppercase;
+    float: left;
+    display: block;
+    text-decoration: none;
+    padding: 10px 22px;
+    font-size: 16px;
+    width: 80%;
+}
+
+#home {
+    display: block;
+    height: 800px;
+    margin: 0px;
+}
+
+#home div {
+    background-repeat: no-repeat;
+    position: fixed;
+    top: 0;
+    background-position: center top !important;
+    transform: translateY(0px);
+    height: 850px;
+    width: 100%;
+    min-width: 1000px;
+    background-size: auto 100%;
+    clear: both;
+    background-attachment: fixed;
+    display: block;
+}
+
+@media screen and (min-width: 600px) {
+    #home {
+        height: 950px;
+    }
+    #home div {
+        height: 1000px;
+    }
+}
+
+#sky {
+    background-color: #78cbfd;
+}
+
+#tree4 {
+    background: url("../img/tree4.png");
+}
+
+#tree3 {
+    background: url("../img/tree3.png");
+}
+
+#tree2 {
+    background: url("../img/tree2.png");
+}
+
+#tree1 {
+    background: url("../img/tree1.png");
+}
+
+#birds2 {
+    background: url("../img/birds2.png");
+}
+
+#birds1 {
+    background: url("../img/birds1.png");
+}
+
+#content {
+    position: relative;
+    height: auto;
+    background-color: #78cbfd;
+    padding: 40px;
+}
+
+#about {
+    border: 5px solid rgba(255, 255, 255, 0.66);
+    padding: 30px;
+    width: -webkit-fill-available;
+    display: flow-root;
+}
+
+.section {
+    padding: 20px;
+    width: 300px;
+    float: left;
+    display: block;
+}
+
+#project {
+    padding: 40px 40px;
+}
+
+#contact {
+    padding: 40px 0;
+    margin: 0px;
+    display: block;
+    text-align: center;
+}
+
+
+/* formularz kontaktowy */
+
+.input-form {
+    margin: 0px auto;
+    border: 4px solid rgba(255, 255, 255, 0.66);
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 10px;
+    margin: 10px;
+    width: 50%;
+}
+
+::placeholder {
+    color: #ffffff;
+}
+
+footer {
+    height: 60px;
+    position: relative;
+}
+
+footer p {
+    text-align: center;
+}

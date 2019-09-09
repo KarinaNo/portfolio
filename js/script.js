@@ -1,8 +1,3 @@
-/*var menuS = document.querySelector('[data-js="menuJs"]');
-menuS.addEventListener('click', function(e) {
-    e.preventDefault();
-    this.classList.toggle('menuActive');
-});*/
 function myFunction() {
     document.getElementById('menuId').classList.toggle('menu-active');
 
@@ -14,10 +9,14 @@ window.addEventListener('scroll', () => {
     for (let i = 0; i < slideDiv.length; i++) {
         console.log(i);
         slideDiv[i].style.transform = 'translateY(-' + (window.pageYOffset * i / slideDiv.length) + 'px)';
+        if (i == 2) {
+            slideDiv[i].style.transform += 'rotate(-' + (window.pageYOffset / 50) + 'deg)';
+        } else if (i == 4) {
+            slideDiv[i].style.transform += 'rotate(' + (window.pageYOffset / 20) + 'deg) scale(1.' + (window.pageYOffset / 50) + ')';
+
+        }
     }
-    /*for (let i of slide) {
-        i.style.transform = 'translateY(-' + (1000 * i / slide.length) + 'px)'
-    }*/
+
 
 
 }, false);

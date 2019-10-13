@@ -64,7 +64,7 @@
         right: 52%;
         opacity: 1;
         letter-spacing: 0;
-        bottom: 77%;
+        bottom: 75%;
     }
     
     p {
@@ -86,14 +86,20 @@
         }
         h2 {
             letter-spacing: 2px;
+            font-size: 30px;
+            line-height: 36px;
         }
         #tree4 h1 {
-            right: 50%;
-            bottom: 41%;
+            font-weight: 600;
+            right: 37%;
+            bottom: 52%;
+            font-size: 40px;
+            line-height: 44px;
         }
         #tree4 h2 {
             right: 51%;
             bottom: 62%;
+            font-weight: 900;
         }
     }
     
@@ -104,6 +110,8 @@
             line-height: 36px;
         }
         #tree4 h1 {
+            right: 38%;
+            bottom: 58%;
             font-size: 30px;
             line-height: 35px;
         }
@@ -352,7 +360,7 @@
         margin: 5px;
     }
     
-    @media screen and (max-width: 320px) {
+    @media screen and (max-width: 768px) {
         .skills {
             width: inherit;
             padding: 30px 10px;
